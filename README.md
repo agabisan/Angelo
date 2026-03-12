@@ -14,11 +14,10 @@ A personal portfolio website for Angelo Gabisan, Full Stack PHP Developer.
 This site is automatically deployed to GitHub Pages via the included GitHub Actions workflow (`.github/workflows/deploy.yml`) whenever changes are pushed to the `main` branch. The workflow automatically enables GitHub Pages on first run — no manual setup is needed in the repository settings.
 
 > **Note:** To serve the site at `https://agabisan.github.io` (without a subpath), the repository must be named **`agabisan.github.io`**.
-> If the repository has a different name (e.g. `Angelo`), the site will be available at `https://agabisan.github.io/Angelo/`.
 
 Once deployed, the site will be live at:
 ```
-https://agabisan.github.io/Angelo/
+https://agabisan.github.io
 ```
 
 ## Local Development
