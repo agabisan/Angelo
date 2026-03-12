@@ -1,6 +1,6 @@
 # Angelo Gabisan – Portfolio
 
-Live site: **https://agabisan.github.io/Angelo/**
+Live site: **https://agabisan.github.io**
 
 A personal portfolio website for Angelo Gabisan, Full Stack PHP Developer.
 
@@ -15,10 +15,10 @@ This site is automatically deployed to GitHub Pages via the included GitHub Acti
 
 Once deployed, the site will be live at:
 ```
-https://agabisan.github.io/Angelo/
+https://agabisan.github.io
 ```
 
-> **Note:** To serve the site at `https://agabisan.github.io` (without a subpath), the repository must be named **`agabisan.github.io`**.
+> **Note:** This repository is named **`agabisan.github.io`** so that the site is served at the root URL `https://agabisan.github.io` (without a subpath).
 
 ## Local Development
 
