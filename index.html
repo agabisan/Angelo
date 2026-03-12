@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Angelo Gabisan – Full Stack PHP Developer portfolio" />
+  <title>Angelo Gabisan | Full Stack PHP Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body class="light"><!-- initial class prevents FOUC; JS overrides on load -->
+
+  <!-- ===== NAVIGATION ===== -->
+  <header id="navbar">
+    <nav class="container nav-inner">
+      <a href="#hero" class="logo">AG<span>.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="btn-icon" id="theme-toggle" aria-label="Toggle dark mode">
+          <span class="icon-sun">☀️</span>
+          <span class="icon-moon">🌙</span>
+        </button>
+        <button class="btn-icon hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="hero section">
+      <div class="container hero-inner">
+        <div class="hero-text fade-in">
+          <p class="hero-greeting">Hi there 👋, I'm</p>
+          <h1 class="hero-name">Angelo Gabisan</h1>
+          <h2 class="hero-title">Full Stack PHP Developer</h2>
+          <p class="hero-intro">
+            Software engineer with experience in Laravel, Yii2, ReactJS,
+            Shopify API, AWS, and legacy PHP systems. I build scalable
+            back-end services and modern web applications for international clients.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-graphic fade-in delay-1">
+          <div class="code-card">
+            <div class="code-bar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <pre class="code-snippet"><code><span class="c-purple">$developer</span> = [
+  <span class="c-green">'name'</span>    =&gt; <span class="c-green">'Angelo Gabisan'</span>,
+  <span class="c-green">'stack'</span>   =&gt; [<span class="c-green">'PHP'</span>, <span class="c-green">'Laravel'</span>, <span class="c-green">'React'</span>],
+  <span class="c-green">'passion'</span> =&gt; <span class="c-green">'Clean, scalable code'</span>,
+  <span class="c-green">'open'</span>    =&gt; <span class="c-orange">true</span>,
+];</code></pre>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-down" aria-label="Scroll to About">
+        <span class="arrow-down"></span>
+      </a>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="about section">
+      <div class="container">
+        <h2 class="section-title reveal">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a <strong>Full Stack PHP Developer</strong> with over 6 years of
+              professional experience building web applications and backend systems
+              for international clients. My journey in software development has taken
+              me through large-scale publishing platforms, e-commerce integrations,
+              and cloud-based storage systems.
+            </p>
+            <p>
+              I specialise in <strong>backend development</strong>, RESTful and
+              GraphQL APIs, system architecture, and integrating third-party
+              services. I enjoy turning complex business requirements into clean,
+              maintainable code.
+            </p>
+            <p>
+              Outside of code, I love learning new technologies, contributing to
+              team growth, and collaborating with clients to deliver solutions
+              that make a real difference.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-value">6+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">10+</span>
+                <span class="stat-label">Projects Delivered</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">∞</span>
+                <span class="stat-label">Coffee Consumed</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-highlights reveal delay-1">
+            <h3>What I bring to the table</h3>
+            <ul class="highlight-list">
+              <li>
+                <span class="highlight-icon">🔧</span>
+                <div>
+                  <strong>Backend Architecture</strong>
+                  <p>Designing scalable, maintainable server-side systems using PHP, Laravel, and Yii2.</p>
+                </div>
+              </li>
+              <li>
+                <span class="highlight-icon">🔌</span>
+                <div>
+                  <strong>API Integration</strong>
+                  <p>REST and GraphQL APIs, including Shopify, OpenStack/Rackspace, and custom business APIs.</p>
+                </div>
+              </li>
+              <li>
+                <span class="highlight-icon">☁️</span>
+                <div>
+                  <strong>Cloud & DevOps</strong>
+                  <p>Deploying and managing applications on AWS. Containerisation with Docker and Git workflows.</p>
+                </div>
+              </li>
+              <li>
+                <span class="highlight-icon">🌍</span>
+                <div>
+                  <strong>International Clients</strong>
+                  <p>Working remotely with clients across different time zones and industries.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <h2 class="section-title reveal">Skills</h2>
+        <p class="section-subtitle reveal">Technologies I work with every day</p>
+        <div class="skills-grid reveal">
+
+          <div class="skill-card">
+            <div class="skill-icon">🐘</div>
+            <span class="skill-name">PHP</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">🔴</div>
+            <span class="skill-name">Laravel</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">🧩</div>
+            <span class="skill-name">Yii2</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">⚛️</div>
+            <span class="skill-name">ReactJS</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">🛍️</div>
+            <span class="skill-name">Shopify API</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">◼</div>
+            <span class="skill-name">GraphQL</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">☁️</div>
+            <span class="skill-name">AWS</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">🐬</div>
+            <span class="skill-name">MySQL</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">🐳</div>
+            <span class="skill-name">Docker</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">🌿</div>
+            <span class="skill-name">Git</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="projects section">
+      <div class="container">
+        <h2 class="section-title reveal">Projects</h2>
+        <p class="section-subtitle reveal">A selection of work I'm proud of</p>
+        <div class="projects-grid">
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-number">01</span>
+              <div class="project-links">
+                <a href="https://github.com/agabisan" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Shopify API Integration System</h3>
+            <p class="project-desc">
+              Built a PHP integration using Shopify GraphQL and REST APIs to manage
+              products, orders, and automation workflows for e-commerce clients.
+            </p>
+            <div class="project-tags">
+              <span class="tag">PHP</span>
+              <span class="tag">Shopify API</span>
+              <span class="tag">GraphQL</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-1">
+            <div class="project-top">
+              <span class="project-number">02</span>
+              <div class="project-links">
+                <a href="https://github.com/agabisan" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Rackspace Cloud Files Integration</h3>
+            <p class="project-desc">
+              Implemented a cloud file storage system using Rackspace Cloud Files
+              with PHP and GuzzleHTTP, enabling scalable asset management.
+            </p>
+            <div class="project-tags">
+              <span class="tag">PHP</span>
+              <span class="tag">OpenStack</span>
+              <span class="tag">Guzzle</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-2">
+            <div class="project-top">
+              <span class="project-number">03</span>
+              <div class="project-links">
+                <a href="https://github.com/agabisan" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Book Publishing Management System</h3>
+            <p class="project-desc">
+              Contributed to a publishing platform handling contributors, royalties,
+              titles, and revenue reports for a leading book-publishing software company.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Laravel</span>
+              <span class="tag">ReactJS</span>
+              <span class="tag">MySQL</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal delay-3">
+            <div class="project-top">
+              <span class="project-number">04</span>
+              <div class="project-links">
+                <a href="https://github.com/agabisan" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Inventory &amp; Sales Reporting System</h3>
+            <p class="project-desc">
+              Developed automated daily reports and backend features for sales
+              tracking, inventory management, and business analytics.
+            </p>
+            <div class="project-tags">
+              <span class="tag">PHP</span>
+              <span class="tag">MySQL</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="experience section">
+      <div class="container">
+        <h2 class="section-title reveal">Experience</h2>
+        <p class="section-subtitle reveal">Where I've honed my craft</p>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-body">
+              <div class="timeline-header">
+                <h3 class="timeline-role">Software Engineer</h3>
+                <span class="timeline-period">6+ Years</span>
+              </div>
+              <p class="timeline-company">Stison Book Publisher Software</p>
+              <ul class="timeline-duties">
+                <li>Worked on a large-scale publishing platform serving international clients across multiple markets.</li>
+                <li>Developed and maintained backend APIs powering contributor management, royalties, and revenue reporting modules.</li>
+                <li>Maintained and improved legacy PHP applications, ensuring stability and performance.</li>
+                <li>Implemented modern features using Laravel and ReactJS, improving developer experience and end-user productivity.</li>
+                <li>Integrated third-party services including Rackspace Cloud Files (OpenStack) and payment systems via REST APIs.</li>
+                <li>Collaborated in an Agile team using Git, code reviews, and continuous integration practices.</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">Laravel</span>
+                <span class="tag">ReactJS</span>
+                <span class="tag">Yii2</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">AWS</span>
+                <span class="tag">Docker</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <h2 class="section-title reveal">Let's Work Together</h2>
+        <p class="section-subtitle reveal">
+          Whether you have a project in mind or just want to chat — my inbox is always open.
+        </p>
+        <div class="contact-cards reveal">
+
+          <a href="mailto:angelo.gabisan@email.com" class="contact-card">
+            <div class="contact-icon">📧</div>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">angelo.gabisan@email.com</span>
+          </a>
+
+          <a href="https://github.com/agabisan" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </div>
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/agabisan</span>
+          </a>
+
+          <a href="https://linkedin.com/in/agabisan" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <div class="contact-icon">💼</div>
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/agabisan</span>
+          </a>
+
+        </div>
+        <div class="contact-cta reveal">
+          <a href="mailto:angelo.gabisan@email.com" class="btn btn-primary btn-lg">Say Hello 👋</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">© <span id="year"></span> Angelo Gabisan. All rights reserved.</p>
+      <a href="https://github.com/agabisan" target="_blank" rel="noopener noreferrer" class="footer-gh" aria-label="GitHub profile">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        github.com/agabisan
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
