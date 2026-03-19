@@ -134,4 +134,82 @@
     setTimeout(type, 900);
   }
 
+  /* ── Ask Angelo terminal ─────────────────────────────── */
+  const terminalForm = $('#terminal-form');
+  const terminalInput = $('#terminal-input');
+  const terminalOutput = $('#terminal-output');
+  const terminalChips = $$('.terminal-chip');
+
+  if (terminalForm && terminalInput && terminalOutput) {
+    const knowledgeBase = [
+      {
+        match: ['experience', 'background', 'career'],
+        answer: 'I am a Senior Software Engineer with 10+ years of experience building backend systems, APIs, publishing platforms, e-commerce integrations, and cloud-based applications for international clients.'
+      },
+      {
+        match: ['stack', 'skills', 'tech', 'technology'],
+        answer: 'My core stack includes PHP, Laravel, Yii2, ReactJS, Shopify API, GraphQL, AWS, MySQL, Docker, and Git.'
+      },
+      {
+        match: ['current', 'now', 'working', 'role'],
+        answer: 'I currently work as a Senior Software Engineer at Stison, contributing to publishing management modules, metadata workflows, ONIX exports, and e-commerce integrations for remote international teams.'
+      },
+      {
+        match: ['project', 'portfolio', 'built'],
+        answer: 'Some highlights are a Shopify API integration system, a Rackspace Cloud Files integration, a book publishing management platform, and inventory plus sales reporting systems.'
+      },
+      {
+        match: ['contact', 'email', 'hire', 'reach'],
+        answer: 'You can reach me at gabisanangelo@yahoo.com.ph, through GitHub at github.com/gabisan, or by using the LinkedIn link in my contact section.'
+      },
+      {
+        match: ['linkedin', 'profile'],
+        answer: 'You can view more of my professional profile on LinkedIn: linkedin.com/in/angelo-gabisan-85973299. This terminal also reflects the experience and skills highlighted there.'
+      },
+      {
+        match: ['help', 'commands'],
+        answer: 'Try prompts like: "Tell me about your experience", "What is your tech stack?", "What are you working on now?", or "Show me your LinkedIn profile".'
+      }
+    ];
+
+    function appendTerminalLine(text, className) {
+      const line = document.createElement('p');
+      line.className = `terminal-line ${className}`.trim();
+      line.textContent = text;
+      terminalOutput.appendChild(line);
+      terminalOutput.scrollTop = terminalOutput.scrollHeight;
+    }
+
+    function getTerminalAnswer(prompt) {
+      const query = prompt.trim().toLowerCase();
+      const entry = knowledgeBase.find(item => item.match.some(keyword => query.includes(keyword)));
+
+      if (entry) return entry.answer;
+
+      return 'I can answer questions about my experience, tech stack, projects, contact details, and LinkedIn profile. Try one of the quick prompts above.';
+    }
+
+    function runPrompt(prompt) {
+      const cleanedPrompt = prompt.trim();
+      if (!cleanedPrompt) return;
+
+      appendTerminalLine(`$ ${cleanedPrompt}`);
+      appendTerminalLine(getTerminalAnswer(cleanedPrompt), 'terminal-response');
+      terminalInput.value = '';
+    }
+
+    terminalForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      runPrompt(terminalInput.value);
+    });
+
+    terminalChips.forEach((chip) => {
+      chip.addEventListener('click', () => {
+        const prompt = chip.getAttribute('data-prompt') || '';
+        terminalInput.value = prompt;
+        runPrompt(prompt);
+      });
+    });
+  }
+
 })();

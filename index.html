@@ -19,6 +19,7 @@
       <a href="#hero" class="logo">AG<span>.</span></a>
       <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#terminal">Ask Me</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
@@ -149,6 +150,49 @@
               </li>
             </ul>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TERMINAL ===== -->
+    <section id="terminal" class="terminal section">
+      <div class="container">
+        <h2 class="section-title reveal">Ask Angelo</h2>
+        <p class="section-subtitle reveal">
+          Try the terminal to ask about my background, stack, current work, or LinkedIn profile.
+        </p>
+        <div class="terminal-shell reveal">
+          <div class="code-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-label">angelo@portfolio:~</span>
+          </div>
+          <div class="terminal-body" id="terminal-output" aria-live="polite">
+            <p class="terminal-line"><span class="terminal-prompt">$</span> help</p>
+            <p class="terminal-line terminal-response">
+              Ask about my experience, skills, projects, contact details, or LinkedIn profile.
+            </p>
+          </div>
+          <div class="terminal-quick-actions">
+            <button type="button" class="terminal-chip" data-prompt="Tell me about your experience">Experience</button>
+            <button type="button" class="terminal-chip" data-prompt="What is your tech stack?">Tech Stack</button>
+            <button type="button" class="terminal-chip" data-prompt="What are you working on now?">Current Work</button>
+            <button type="button" class="terminal-chip" data-prompt="Show me your LinkedIn profile">LinkedIn</button>
+          </div>
+          <form class="terminal-form" id="terminal-form">
+            <label class="sr-only" for="terminal-input">Ask Angelo a question</label>
+            <span class="terminal-prompt" aria-hidden="true">$</span>
+            <input
+              id="terminal-input"
+              class="terminal-input"
+              type="text"
+              name="prompt"
+              autocomplete="off"
+              placeholder="Ask me about my experience, stack, or LinkedIn profile"
+            />
+            <button type="submit" class="btn btn-primary">Run</button>
+          </form>
         </div>
       </div>
     </section>
